@@ -90,217 +90,423 @@ class _HomescreenState extends State<Homescreen> {
                 ],
               ),
               SizedBox(height: 10,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                    height: 250,
-                    width: 200,
-                    child: Column(
-                      children: [
-                        Container(
-                          height: 150,
-                          width: double.infinity,
-                          child: Image.asset("assets/imades/headphones.jpg"),
-                        ),
-                        SizedBox(height: 10,),
-                        Text("Gaming Headsets",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
-                        SizedBox(height: 6,),
-                        Padding(
-                          padding: EdgeInsets.only(left: 40),
-                          child: Row(
-                            children: [
-                              Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                              Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                              Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                              Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                              Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                            ],
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                      height: 250,
+                      width: 200,
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 150,
+                            width: double.infinity,
+                            child: Image.asset("assets/imades/headphones.jpg"),
                           ),
-                        ),
-                        SizedBox(height: 7,),
-                        Align(
-                          alignment: Alignment.centerLeft,
-                          child: Padding(
+                          SizedBox(height: 10,),
+                          Text("Gaming Headsets",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
+                          SizedBox(height: 6,),
+                          Padding(
                             padding: EdgeInsets.only(left: 40),
-                            child: Text("12.50\$",style: TextStyle(
-                              color: Colors.deepOrange,
-                            ),),
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment.centerRight,
-                          child: Container(
-                            height: 30,
-                            width: 40,
-                            child: Icon(Icons.add,size: 20,color: Colors.white,),
-                            decoration: BoxDecoration(
-                              color: Colors.deepOrange,
-                              borderRadius: BorderRadius.only(topLeft: Radius.circular(13),bottomRight: Radius.circular(13))
+                            child: Row(
+                              children: [
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                              ],
                             ),
                           ),
-                        ),
-                      ],
-                    )
-                  ),
-                  Container(
-                    height: 250,
-                    width: 200,
-                    child: Column(
-                      children: [
-                        Container(
-                          height: 150,
-                          width: double.infinity,
-                          child: Image.asset("assets/imades/car.jpg"),
-                        ),
-                        SizedBox(height: 10,),
-                        Text("RACING CAR",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
-                        SizedBox(height: 6,),
-                        Padding(
-                          padding: EdgeInsets.only(left: 40),
-                          child: Row(
-                            children: [
-                              Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                              Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                              Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                              Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                              Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                            ],
-                          ),
-                        ),
-                        SizedBox(height: 7,),
-                        Align(
-                          alignment: Alignment.centerLeft,
-                          child: Padding(
-                            padding: EdgeInsets.only(left: 40),
-                            child: Text("80.50\$",style: TextStyle(
-                              color: Colors.deepOrange,
-                            ),),
-                          ),
-                        ),
-                        Align(
-                          alignment: Alignment.centerRight,
-                          child: Container(
-                            height: 30,
-                            width: 40,
-                            child: Icon(Icons.add,size: 20,color: Colors.white,),
-                            decoration: BoxDecoration(
-                              color: Colors.deepOrange,
-                              borderRadius: BorderRadius.only(topLeft: Radius.circular(13),bottomRight: Radius.circular(13))
+                          SizedBox(height: 7,),
+                          Align(
+                            alignment: Alignment.centerLeft,
+                            child: Padding(
+                              padding: EdgeInsets.only(left: 40),
+                              child: Text("12.50\$",style: TextStyle(
+                                color: Colors.deepOrange,
+                              ),),
                             ),
                           ),
-                        ),
-                      ],
-                    )
-                  ),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: Container(
+                              height: 30,
+                              width: 40,
+                              child: Icon(Icons.add,size: 20,color: Colors.white,),
+                              decoration: BoxDecoration(
+                                color: Colors.deepOrange,
+                                borderRadius: BorderRadius.only(topLeft: Radius.circular(13),bottomRight: Radius.circular(13))
+                              ),
+                            ),
+                          ),
+                        ],
+                      )
+                    ),
+                    Container(
+                      height: 250,
+                      width: 200,
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 150,
+                            width: double.infinity,
+                            child: Image.asset("assets/imades/car.jpg"),
+                          ),
+                          SizedBox(height: 10,),
+                          Text("RACING CAR",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
+                          SizedBox(height: 6,),
+                          Padding(
+                            padding: EdgeInsets.only(left: 40),
+                            child: Row(
+                              children: [
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 7,),
+                          Align(
+                            alignment: Alignment.centerLeft,
+                            child: Padding(
+                              padding: EdgeInsets.only(left: 40),
+                              child: Text("80.50\$",style: TextStyle(
+                                color: Colors.deepOrange,
+                              ),),
+                            ),
+                          ),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: Container(
+                              height: 30,
+                              width: 40,
+                              child: Icon(Icons.add,size: 20,color: Colors.white,),
+                              decoration: BoxDecoration(
+                                color: Colors.deepOrange,
+                                borderRadius: BorderRadius.only(topLeft: Radius.circular(13),bottomRight: Radius.circular(13))
+                              ),
+                            ),
+                          ),
+                        ],
+                      )
+                    ),
+                    Container(
+                      height: 250,
+                      width: 200,
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 150,
+                            width: double.infinity,
+                            child: Image.asset("assets/imades/airposd.jpg"),
+                          ),
+                          SizedBox(height: 10,),
+                          Text("Airpods Pro",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
+                          SizedBox(height: 6,),
+                          Padding(
+                            padding: EdgeInsets.only(left: 40),
+                            child: Row(
+                              children: [
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 7,),
+                          Align(
+                            alignment: Alignment.centerLeft,
+                            child: Padding(
+                              padding: EdgeInsets.only(left: 40),
+                              child: Text("129.00\$",style: TextStyle(
+                                color: Colors.deepOrange,
+                              ),),
+                            ),
+                          ),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: Container(
+                              height: 30,
+                              width: 40,
+                              child: Icon(Icons.add,size: 20,color: Colors.white,),
+                              decoration: BoxDecoration(
+                                color: Colors.deepOrange,
+                                borderRadius: BorderRadius.only(topLeft: Radius.circular(13),bottomRight: Radius.circular(13))
+                              ),
+                            ),
+                          ),
+                        ],
+                      )
+                    ),
+                    Container(
+                      height: 250,
+                      width: 200,
+                      child: Column(
+                        children: [
+                          Container(
+                            height: 150,
+                            width: double.infinity,
+                            child: Image.asset("assets/imades/phone.jpg"),
+                          ),
+                          SizedBox(height: 10,),
+                          Text("Pixel 7 pro",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
+                          SizedBox(height: 6,),
+                          Padding(
+                            padding: EdgeInsets.only(left: 40),
+                            child: Row(
+                              children: [
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                              ],
+                            ),
+                          ),
+                          SizedBox(height: 7,),
+                          Align(
+                            alignment: Alignment.centerLeft,
+                            child: Padding(
+                              padding: EdgeInsets.only(left: 40),
+                              child: Text("950\$",style: TextStyle(
+                                color: Colors.deepOrange,
+                              ),),
+                            ),
+                          ),
+                          Align(
+                            alignment: Alignment.centerRight,
+                            child: Container(
+                              height: 30,
+                              width: 40,
+                              child: Icon(Icons.add,size: 20,color: Colors.white,),
+                              decoration: BoxDecoration(
+                                color: Colors.deepOrange,
+                                borderRadius: BorderRadius.only(topLeft: Radius.circular(13),bottomRight: Radius.circular(13))
+                              ),
+                            ),
+                          ),
+                        ],
+                      )
+                    ),
 
-                ],
+                  ],
+                ),
               ),
               SizedBox(height: 20,),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  Container(
-                      height: 250,
-                      width: 200,
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 150,
-                            width: double.infinity,
-                            child: Image.asset("assets/imades/tshirt.jpg"),
-                          ),
-                          SizedBox(height: 10,),
-                          Text("Polo T-shirt",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
-                          SizedBox(height: 6,),
-                          Padding(
-                            padding: EdgeInsets.only(left: 40),
-                            child: Row(
-                              children: [
-                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                              ],
+              SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Container(
+                        height: 250,
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 150,
+                              width: double.infinity,
+                              child: Image.asset("assets/imades/tshirt.jpg"),
                             ),
-                          ),
-                          SizedBox(height: 7,),
-                          Align(
-                            alignment: Alignment.centerLeft,
-                            child: Padding(
+                            SizedBox(height: 10,),
+                            Text("Polo T-shirt",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
+                            SizedBox(height: 6,),
+                            Padding(
                               padding: EdgeInsets.only(left: 40),
-                              child: Text("19.50\$",style: TextStyle(
-                                color: Colors.deepOrange,
-                              ),),
-                            ),
-                          ),
-                          Align(
-                            alignment: Alignment.centerRight,
-                            child: Container(
-                              height: 30,
-                              width: 40,
-                              child: Icon(Icons.add,size: 20,color: Colors.white,),
-                              decoration: BoxDecoration(
-                                  color: Colors.deepOrange,
-                                  borderRadius: BorderRadius.only(topLeft: Radius.circular(13),bottomRight: Radius.circular(13))
+                              child: Row(
+                                children: [
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                ],
                               ),
                             ),
-                          ),
-                        ],
-                      )
-                  ),
-                  Container(
-                      height: 250,
-                      width: 200,
-                      child: Column(
-                        children: [
-                          Container(
-                            height: 150,
-                            width: double.infinity,
-                            child: Image.asset("assets/imades/miband.jpg"),
-                          ),
-                          SizedBox(height: 10,),
-                          Text("Mi smart band",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
-                          SizedBox(height: 6,),
-                          Padding(
-                            padding: EdgeInsets.only(left: 40),
-                            child: Row(
-                              children: [
-                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                                Icon(Icons.star,size: 7,color: Colors.deepOrange,),
-                              ],
-                            ),
-                          ),
-                          SizedBox(height: 7,),
-                          Align(
-                            alignment: Alignment.centerLeft,
-                            child: Padding(
-                              padding: EdgeInsets.only(left: 40),
-                              child: Text("33.50\$",style: TextStyle(
-                                color: Colors.deepOrange,
-                              ),),
-                            ),
-                          ),
-                          Align(
-                            alignment: Alignment.centerRight,
-                            child: Container(
-                              height: 30,
-                              width: 40,
-                              child: Icon(Icons.add,size: 20,color: Colors.white,),
-                              decoration: BoxDecoration(
+                            SizedBox(height: 7,),
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: Padding(
+                                padding: EdgeInsets.only(left: 40),
+                                child: Text("19.50\$",style: TextStyle(
                                   color: Colors.deepOrange,
-                                  borderRadius: BorderRadius.only(topLeft: Radius.circular(13),bottomRight: Radius.circular(13))
+                                ),),
                               ),
                             ),
-                          ),
-                        ],
-                      )
-                  ),
-                ],
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: Container(
+                                height: 30,
+                                width: 40,
+                                child: Icon(Icons.add,size: 20,color: Colors.white,),
+                                decoration: BoxDecoration(
+                                    color: Colors.deepOrange,
+                                    borderRadius: BorderRadius.only(topLeft: Radius.circular(13),bottomRight: Radius.circular(13))
+                                ),
+                              ),
+                            ),
+                          ],
+                        )
+                    ),
+                    Container(
+                        height: 250,
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 150,
+                              width: double.infinity,
+                              child: Image.asset("assets/imades/miband.jpg"),
+                            ),
+                            SizedBox(height: 10,),
+                            Text("Mi smart band",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
+                            SizedBox(height: 6,),
+                            Padding(
+                              padding: EdgeInsets.only(left: 40),
+                              child: Row(
+                                children: [
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 7,),
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: Padding(
+                                padding: EdgeInsets.only(left: 40),
+                                child: Text("33.50\$",style: TextStyle(
+                                  color: Colors.deepOrange,
+                                ),),
+                              ),
+                            ),
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: Container(
+                                height: 30,
+                                width: 40,
+                                child: Icon(Icons.add,size: 20,color: Colors.white,),
+                                decoration: BoxDecoration(
+                                    color: Colors.deepOrange,
+                                    borderRadius: BorderRadius.only(topLeft: Radius.circular(13),bottomRight: Radius.circular(13))
+                                ),
+                              ),
+                            ),
+                          ],
+                        )
+                    ),
+                    Container(
+                        height: 250,
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 150,
+                              width: double.infinity,
+                              child: Image.asset("assets/imades/watch.jpg"),
+                            ),
+                            SizedBox(height: 10,),
+                            Text("Watch Ultra",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
+                            SizedBox(height: 6,),
+                            Padding(
+                              padding: EdgeInsets.only(left: 40),
+                              child: Row(
+                                children: [
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 7,),
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: Padding(
+                                padding: EdgeInsets.only(left: 40),
+                                child: Text("870\$",style: TextStyle(
+                                  color: Colors.deepOrange,
+                                ),),
+                              ),
+                            ),
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: Container(
+                                height: 30,
+                                width: 40,
+                                child: Icon(Icons.add,size: 20,color: Colors.white,),
+                                decoration: BoxDecoration(
+                                    color: Colors.deepOrange,
+                                    borderRadius: BorderRadius.only(topLeft: Radius.circular(13),bottomRight: Radius.circular(13))
+                                ),
+                              ),
+                            ),
+                          ],
+                        )
+                    ),
+                    Container(
+                        height: 250,
+                        width: 200,
+                        child: Column(
+                          children: [
+                            Container(
+                              height: 150,
+                              width: double.infinity,
+                              child: Image.asset("assets/imades/neckband.jpg"),
+                            ),
+                            SizedBox(height: 10,),
+                            Text("Sony",style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,color: Colors.black),),
+                            SizedBox(height: 6,),
+                            Padding(
+                              padding: EdgeInsets.only(left: 40),
+                              child: Row(
+                                children: [
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                  Icon(Icons.star,size: 7,color: Colors.deepOrange,),
+                                ],
+                              ),
+                            ),
+                            SizedBox(height: 7,),
+                            Align(
+                              alignment: Alignment.centerLeft,
+                              child: Padding(
+                                padding: EdgeInsets.only(left: 40),
+                                child: Text("299\$",style: TextStyle(
+                                  color: Colors.deepOrange,
+                                ),),
+                              ),
+                            ),
+                            Align(
+                              alignment: Alignment.centerRight,
+                              child: Container(
+                                height: 30,
+                                width: 40,
+                                child: Icon(Icons.add,size: 20,color: Colors.white,),
+                                decoration: BoxDecoration(
+                                    color: Colors.deepOrange,
+                                    borderRadius: BorderRadius.only(topLeft: Radius.circular(13),bottomRight: Radius.circular(13))
+                                ),
+                              ),
+                            ),
+                          ],
+                        )
+                    ),
+                  ],
+                ),
               ),
               Expanded(child: SizedBox()),
               Row(
