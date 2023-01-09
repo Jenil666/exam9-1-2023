@@ -13,7 +13,7 @@ void main() {
       routes: {
         '/':(context)=>Homescreen(),
         'S1':(context)=>S1(),
-        'S2':(context)=>S2(),
+        'P1':(context)=>S2(),
       },
     ),
   );
